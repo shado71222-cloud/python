@@ -9,7 +9,7 @@ class vehicles:
     truck1 = trucks("honda", 8, 150000, 1.18, 100, 20)
 
     car1.current_battery_check()
-    car_price=car1.price_calculator()
+    car1_price=car1.price_calculator()
     truck_price=truck1.price_calculator()
 
     # if car1.price_calculator() > truck1.price_calculator():
@@ -20,11 +20,11 @@ class vehicles:
     #     print(f"the truck is more expensive by {difference} nis")
     # else:
     #     print("both vehicles cost the same amount")
-    if car_price >truck_price:
-        difference =car_price - truck_price
+    if car1_price > truck_price:
+        difference =car1_price - truck_price
         print(f"the car is more expensive by {difference} nis")
-    elif car_price <truck_price:
-        difference = truck_price - car_price
+    elif car1_price <truck_price:
+        difference = truck_price - car1_price
         print(f"the truck is more expensive by {difference} nis")
     else:
         print("both vehicles cost the same amount")

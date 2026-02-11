@@ -1,4 +1,4 @@
-from training.defs_c3 import Utils_jb61
+from training.general.defs_c3 import Utils_jb61
 
 user_1 = {
     "first_name": "John",

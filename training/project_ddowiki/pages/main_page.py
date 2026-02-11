@@ -34,7 +34,7 @@ class MainPage():
             weight_finder=raw_weight_finder.inner_text()
             plat_finder=raw_plat_finder.inner_text()
             plat_value = float(re.sub(r'[^\d.]', '', plat_finder))
-            weight_value=float(re.sub(r'[^\d.]', '',weight_finder))
+            weight_value = float(re.sub(r'[^\d.]', '',weight_finder))
             plat_per_wei=plat_value/weight_value
             print(f"{search} is worth {plat_per_wei} plat for each lbs")
             return plat_per_wei
