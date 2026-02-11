@@ -20,10 +20,9 @@ class MainPage():
             row_split = slot_finder.locator("> *").nth(1)
             slot_type=row_split.inner_text().strip()
             print(f"this item is used in the {slot_type} slot")
-            slot=True
+            return True
         except:
-            slot=False
-        return slot
+            return False
 
     def plat_per_weight(self,search):
         try:

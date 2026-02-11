@@ -2,6 +2,7 @@ from training.project_ddowiki.pages.classes_page import ClassesPage
 from training.project_ddowiki.pages.main_page import MainPage
 
 #classes example (barbarian,wizard,fighter,cleric,rogue)
+#some tests are using try and except in case the search is faulty so it doesnt crush the rest of the tests
 
 class Test_ddowiki:
     # goes to the wiki and put the text into the search bar and clicks search
